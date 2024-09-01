@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  22 AUG 2024 16:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  1 SEP 2024 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1902,32 +1902,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--69
 
  []
 
-<circle_plot.png, id=31, 462.528pt x 346.896pt>
-File: circle_plot.png Graphic file (type png)
-<use circle_plot.png>
-Package pdftex.def Info: circle_plot.png  used on input line 105.
+<1-1.5-20_plot.png, id=31, 462.528pt x 346.896pt>
+File: 1-1.5-20_plot.png Graphic file (type png)
+<use 1-1.5-20_plot.png>
+Package pdftex.def Info: 1-1.5-20_plot.png  used on input line 105.
 (pdftex.def)             Requested size: 218.5194pt x 163.89334pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc}
 
-] [2 <./circle_plot.png>] (./matgeo2.aux)
+] [2 <./1-1.5-20_plot.png>] (./matgeo2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `matgeo2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  52935 strings out of 474222
- 1254446 string characters out of 5748734
+ 1254460 string characters out of 5748734
  1943975 words of memory out of 5000000
  74369 multiletter control sequences out of 15000+600000
  623257 words of font info for 169 fonts, out of 8000000 for 9000
@@ -1939,7 +1932,7 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on matgeo2.pdf (2 pages, 70181 bytes).
+Output written on matgeo2.pdf (2 pages, 75245 bytes).
 PDF statistics:
  94 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
