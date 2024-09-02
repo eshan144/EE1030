@@ -1,20 +1,25 @@
+# Code by GVV Sharma
+# August 2024
+# Released under GNU GPL
+# Plotting the internal and external division of a line segment PQ
+
 import numpy as np
 import matplotlib.pyplot as plt
 
-P = np.array([3, -2])
-Q = np.array([1, 1])
+# Load the division points from the text file
+points = np.loadtxt("division_points.txt")
 
-m_internal = 1
-n_internal = 2
+# Extracting the internal and external division points
+R_internal = points[0]  # Internal division point
+R_external = points[1]  # External division point
 
-m_external = 2
-n_external = 1
-
-R_internal = (m_internal * P + n_internal * Q) / (m_internal + n_internal)
-R_external = (m_external * Q - n_external * P) / (m_external - n_external)
+# Define points P and Q
+P = np.array([3, -2])   # Point P
+Q = np.array([1, 1])    # Point Q
 
 plt.figure(figsize=(10, 5))
 
+# Plotting Internal Division
 plt.subplot(1, 2, 1)
 plt.plot([P[0], Q[0]], [P[1], Q[1]], 'bo-', label="Line PQ")
 plt.plot(R_internal[0], R_internal[1], 'ro', label="Internal Division R")
@@ -27,6 +32,7 @@ plt.axhline(0, color='black', linewidth=0.5)
 plt.axvline(0, color='black', linewidth=0.5)
 plt.legend()
 
+# Plotting External Division
 plt.subplot(1, 2, 2)
 plt.plot([P[0], Q[0]], [P[1], Q[1]], 'bo-', label="Line PQ")
 plt.plot(R_external[0], R_external[1], 'ro', label="External Division R")
@@ -41,5 +47,4 @@ plt.legend()
 
 plt.tight_layout()
 plt.show()
-
 
