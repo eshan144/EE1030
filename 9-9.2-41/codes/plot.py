@@ -37,7 +37,6 @@ plt.xlim(-r - 1, r + 1)  # Extend x-limits to show full circle
 plt.ylim(-r - 1, r + 1)  # Extend y-limits to show full circle
 plt.xlabel('x-axis')
 plt.ylabel('y-axis')
-plt.title('Area Enclosed in the First Quadrant with Full Circle')
 plt.grid(True)
 plt.legend()
 plt.gca().set_aspect('equal', adjustable='box')
