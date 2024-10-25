@@ -1,0 +1,30 @@
+
+
+    	\begin{circuitikz}[american]
+    		% Delta-connected three-phase source
+    		\draw
+    		(0,0) to[sinusoidal voltage source] (2,2) % First phase
+    		to[sinusoidal voltage source] (4,0) % Second phase
+    		to[sinusoidal voltage source, l_=$11\,\mathrm{kV}$] (0,0); % Third phase
+    		
+    		% Resistor network
+    		\draw
+    		(2,2) -- (2,3) 
+    		to[R=$2\,\Omega$, i=$100\,\mathrm{A}$] (8,3) -- (8,2.5) 
+    		to[R] (8,2)
+    		to[R] (6,0); 
+    		
+    		% Remaining resistors and connections
+    		\draw
+    		(8,2) to[R] (10,0) % Diagonal resistor
+    		(4,0) to[R=$2\,\Omega$] (6,0) % Horizontal resistor
+    		(10,0) -- (10,-1) % Vertical wire
+    		to[R=$2\,\Omega$] (0,-1) % Horizontal bottom resistor
+    		(0,0) -- (0,-1); % Closing the bottom connection
+    		
+    		% Label the source and load
+    		\node at (0,-1.5) {Source}; % Source label at the left
+    		\node at (10,-1.5) {Load}; % Load label at the right
+    		
+    	\end{circuitikz}
+

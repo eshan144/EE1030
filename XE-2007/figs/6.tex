@@ -1,0 +1,21 @@
+
+   	\begin{circuitikz}[american]
+   		
+   		% Transformer primary side
+   		\draw
+   		(0,0) node [transformer core,scale=0.8](T){} % Transformer core
+   		(T.A1) node[left]{$N_p$} -- (-2,0.85) % Primary top winding connection
+   		to[sinusoidal voltage source,l_=Amplitude A // Frequency 400 Hz] (-2,0) -- (-2,-0.85) --(0,-0.85)
+   		;
+
+   		% Transformer secondary side
+   		\draw
+   		(T.B1) node[right]{$N_s$} -- (2,0.85)
+   		(0,-0.85)--(2,-0.85); % Secondary top winding
+   		
+   		% Label for transformer
+   		\node at (T.base) {K};
+   		\draw [latex-latex] (2.3,0.85) -- (2.3,-0.85) node[midway, left] {$V_s$};
+   		
+   	\end{circuitikz}
+
