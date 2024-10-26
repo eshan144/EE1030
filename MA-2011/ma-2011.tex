@@ -1,0 +1,215 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{enumitem,multicol}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage[american,siunitx]{circuitikz}
+\usetikzlibrary{arrows,shapes,calc,positioning}
+\usepackage{pgfplots}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{MA-2011}
+\author{EE24Btech11022 - Eshan Sharma}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+
+\begin{enumerate}
+    \item For the rings L = $\frac{\mathbb{R}[x]}{<x^{2}-x+1>}$; M = $\frac{\mathbb{R}[x]}{<x^{2}+x+1>}$; N = $\frac{\mathbb{R}[x]}{<x^{2}+2x+1>}$;\\
+    which of the following is $\vec{TRUE}$?
+    \hfill{(ma-2011)}
+    \begin{enumerate}
+    \item L is isomorphic to M; L is not isomorphic to N; M is not isomorphic to N
+    \item M is isomorphic to N; M is not isomorphic to L; N is not isomorphic to L
+    \item L is isomorphic to M; M is isomorphic to N
+    \item L is not isomorphic to M; L is not isomorphic to N; M is not isomorphic to N
+    \end{enumerate} 
+    \item The time to failure(in hours) of a component is a continuous random variable $\vec{T}$ with the probability density function\\
+    \begin{center}
+    $
+    f(t) = 
+    \begin{cases} 
+    	\frac{1}{10} e^{-\frac{t}{10}}, & t > 0, \\
+    	0, & t \leq 0.
+    \end{cases}
+    $
+	\end{center}
+	Ten of these components are installed in a system and they work independently. Then ,the probability than $\vec{NONE}$ of these fail before ten hours, is
+    \hfill{(ma-2011)}
+    \begin{multicols}{4}
+    \begin{enumerate}
+    \item $e^{-10}$
+    \item $1-e^{-10}$
+    \item $10e^{-10}$
+    \item $1-10e^{-10}$
+    \end{enumerate}
+    \end{multicols}
+    \item Let $\vec{X}$ be the normal linear space of all real sequences with finitely many non-zero terms, with supremum norm and $\vec{T} : X \rightarrow X$ be a one to one and onto linear operator defined by \\
+    \begin{center}
+    	$\vec{T} \brak{x_1,x_2,x_3...} = \brak{x_1,\frac{x_2}{2}, \frac{x_3}{3},...}$
+    \end{center}
+    Then, which of the following is $\vec{TRUE}$? 
+    \hfill{(ma-2011)}
+    \begin{multicols}{2}
+    \begin{enumerate}
+    \item $\vec{T}$ is bounded but $\vec{T}^{-1}$ is not bounded
+    \item $\vec{T}$ is not bounded but $\vec{T}^{-1}$ is bounded
+    \item both $\vec{T}$ and $\vec{T}^{-1}$ are bounded
+    \item neither  $\vec{T}$ nor $\vec{T}^{-1}$ are bounded
+    \end{enumerate}
+    \end{multicols}
+    \item Let $e_i = (0, \ldots, 0, 1, 0, \ldots)$ (i.e., $e_i$ is the vector with 1 at the $i^{\text{th}}$ place and 0 elsewhere) for $i = 1, 2, \ldots$.
+    \begin{itemize}
+    	\item[] Consider the statements:
+    	\begin{itemize}
+    		\item $\vec{P}$: $\{f(e_j)\}$ converges for every continuous linear functional on $l^2$.
+    		\item $\vec{Q}$: $\{e_j\}$ converges in $l^2$.
+    	\end{itemize}
+    	Then, which of the following holds?
+    	\begin{enumerate}
+    		\item Both $\vec{P}$ and $\vec{Q}$ are TRUE
+    		\item $\vec{P}$ is TRUE but $\vec{Q}$ is not TRUE
+    		\item $\vec{P}$ is not TRUE but $\vec{Q}$ is TRUE
+    		\item Neither $\vec{P}$ nor $\vec{Q}$ is TRUE
+    	\end{enumerate}
+    \end{itemize}
+    
+    \item For which subspace $X \subset \mathbb{R}$ with the usual topology and with $\{0,1\} \subseteq X$, will a continuous function $f : X \rightarrow \{0,1\}$ satisfying $f(0) = 0$ and $f(1) = 1$ exist?
+    \begin{enumerate}
+    	\item $X = [0,1]$
+    	\item $X = [-1,1]$
+    	\item $X = \mathbb{R}$
+    	\item $[0,1] \subset X$
+    \end{enumerate}
+    
+    \item Suppose $X$ is a finite set with more than five elements. Which of the following is TRUE?
+    \begin{enumerate}
+    	\item There is a topology on $X$ which is $T_1$
+    	\item There is a topology on $X$ which is $T_3$ but not $T_1$
+    	\item There is a topology on $X$ which is $T_2$ but not $T_1$
+    	\item There is no topology on $X$ which is $T_1$
+    \end{enumerate}
+    
+    \item A massless wire is bent in the form of a parabola $z = r^2$ and a bead slides on it smoothly. The wire is rotated about the $z$-axis with a constant angular acceleration $\alpha$. Assume that $m$ is the mass of the bead, $\omega$ is the initial angular velocity and $g$ is the acceleration due to gravity. Then, the Lagrangian at any time $t$ is
+    \begin{enumerate}
+    	\item $ \frac{m}{2} \left( \frac{d r}{d t} \right)^2 (1 + 4r^2) r^2 + (\omega + \alpha t)^2 + 2gr$
+    	\item $ \frac{m}{2} \left( \frac{d r}{d t} \right)^2 (1 + 4r^2) r^2 + (\omega + \alpha t)^2 - 2gr$
+    	\item $ \frac{m}{2} \left( \frac{d r}{d t} \right)^2 (1 + 4r^2) r^2 + (\omega + \alpha t)^2 - 2gr$
+    	\item $ \frac{m}{2} \left( \frac{d r}{d t} \right)^2 (1 + 4r^2) r^2 + (\omega + \alpha t)^2 + 2gr$
+    \end{enumerate}
+    
+    \item On the interval $[0, 1]$, let $y$ be a twice continuously differentiable function which is an extremal of the functional
+    $$ J(y) = \int_0^1 \sqrt{1 + 2y'^2} \frac{y'}{x} \, dx $$
+    with $y(0) = 1$, $y(1) = 2$. Then, for some arbitrary constant $c$, $y$ satisfies
+    \begin{enumerate}
+    	\item $y'^2 (2 - c x^2) = c x^2$
+    	\item $y'^2 (2 + c x^2) = c x^2$
+    	\item $y' (1 - c x^2) = c x^2$
+    	\item $y' (1 + c x^2) = c x^2$
+    \end{enumerate}
+
+    	Let $X$ and $Y$ be two continuous random variables with the joint probability density function
+    	$$ f(x, y) = \begin{cases} 
+    		2, & 0 < x + y < 1, \; x > 0, \; y > 0, \\
+    		0, & \text{elsewhere}.
+    	\end{cases} $$
+    	\item $P\left(X + Y < \frac{1}{2}\right)$ is
+    	\begin{multicols}{4}
+    	\begin{enumerate}
+    		\item $\frac{1}{4}$
+    		\item $\frac{1}{2}$
+    		\item $\frac{3}{4}$
+    		\item $1$
+    	\end{enumerate}
+    	\end{multicols}
+    	
+    	\item $E\left( X \mid Y = \frac{1}{2} \right)$ is
+    	\begin{multicols}{4}
+    	\begin{enumerate}
+    		\item $\frac{1}{4}$
+    		\item $\frac{1}{2}$
+    		\item $1$
+    		\item $2$
+    	\end{enumerate}
+    	\end{multicols}
+    	Let $f(z) = \frac{z}{8 - z^2}$, $z = x + iy$. \\
+    	\item $\text{Res}_{z=2} \; f(z)$ is
+    	\begin{multicols}{4}
+    	\begin{enumerate}
+    		\item $\frac{1}{8}$
+    		\item $\frac{1}{6}$
+    		\item $-\frac{1}{6}$
+    		\item $-\frac{1}{8}$
+    	\end{enumerate}
+    	\end{multicols}
+    	\item The Cauchy principal value of $\int_{-\infty}^{\infty} f(x) \, dx$ is
+    	\begin{multicols}{4}
+    	\begin{enumerate}
+    		\item $-\frac{\pi \sqrt{3}}{6}$
+    		\item $-\frac{\pi \sqrt{3}}{8}$
+    		\item $\frac{\pi \sqrt{3}}{6}$
+    		\item $\pi \sqrt{3}$
+    	\end{enumerate}
+    	\end{multicols}
+    	\item Let $f_j(x) = \frac{x}{(j-1)x + j}$ and $s_n(x) = \sum_{j=1}^n f_j(x)$ for $x \in [0,1]$. The sequence $\{s_n\}$
+    	\begin{enumerate}
+    		\item converges uniformly on $[0,1]$
+    		\item converges pointwise on $[0,1]$ but not uniformly
+    		\item converges pointwise for $x = 0$ but not for $x \in (0, 1]$
+    		\item does not converge for $x \in [0, 1]$
+    	\end{enumerate}
+
+\end{enumerate}
+\end{document}
+
+
