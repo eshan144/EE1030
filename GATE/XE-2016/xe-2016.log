@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  29 OCT 2024 04:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.6)  30 OCT 2024 13:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1455,7 +1455,17 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 5
 4.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./xe-2016.aux)
+) (./xe-2016.aux
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+
+LaTeX Warning: Label `fig:my_label' multiply defined.
+
+)
 \openout1 = `xe-2016.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 54.
@@ -1657,82 +1667,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
 dist/fonts/enc/dvips/base/8r.enc} <./figs/27.png> <./figs/29.png>]
-<figs/30.png, id=35, 582.175pt x 312.16624pt>
-File: figs/30.png Graphic file (type png)
-<use figs/30.png>
-Package pdftex.def Info: figs/30.png  used on input line 101.
-(pdftex.def)             Requested size: 309.60315pt x 166.01414pt.
+LaTeX Font Info:    Calculating math sizes for size <20> on input line 143.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-<figs/31.png, id=36, 582.175pt x 312.16624pt>
-File: figs/31.png Graphic file (type png)
-<use figs/31.png>
-Package pdftex.def Info: figs/31.png  used on input line 108.
-(pdftex.def)             Requested size: 309.60315pt x 166.01414pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
-<figs/32.png, id=37, 782.925pt x 428.60126pt>
-File: figs/32.png Graphic file (type png)
-<use figs/32.png>
-Package pdftex.def Info: figs/32.png  used on input line 114.
-(pdftex.def)             Requested size: 309.60315pt x 169.48856pt.
-[2 <./figs/30.png> <./figs/31.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
+LaTeX Font Info:    Calculating math sizes for size <17> on input line 222.
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
-<figs/33.png, id=46, 367.3725pt x 366.36874pt>
-File: figs/33.png Graphic file (type png)
-<use figs/33.png>
-Package pdftex.def Info: figs/33.png  used on input line 120.
-(pdftex.def)             Requested size: 154.80157pt x 154.38254pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--124
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
-<figs/36.png, id=47, 358.33875pt x 197.73875pt>
-File: figs/36.png Graphic file (type png)
-<use figs/36.png>
-Package pdftex.def Info: figs/36.png  used on input line 139.
-(pdftex.def)             Requested size: 309.60315pt x 170.8546pt.
-[3 <./figs/32.png> <./figs/33.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
 
  []
 
-[4 <./figs/36.png>] (./xe-2016.aux)
+[3] [4] (./xe-2016.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `xe-2016.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 61264 strings out of 474222
- 1567563 string characters out of 5748734
- 2325259 words of memory out of 5000000
- 82606 multiletter control sequences out of 15000+600000
- 618328 words of font info for 154 fonts, out of 8000000 for 9000
+ 61637 strings out of 474222
+ 1576879 string characters out of 5748734
+ 2325260 words of memory out of 5000000
+ 82969 multiletter control sequences out of 15000+600000
+ 653611 words of font info for 251 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,6n,103p,1175b,1112s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,10n,103p,1175b,1076s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on xe-2016.pdf (4 pages, 387714 bytes).
+Output written on xe-2016.pdf (4 pages, 181459 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 111 PDF objects out of 1000 (max. 8388607)
  86 compressed objects within 1 object stream
  38 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
