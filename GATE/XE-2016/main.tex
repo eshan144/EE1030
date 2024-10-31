@@ -49,6 +49,7 @@
 \newcommand{\define}{\stackrel{\triangle}{=}}
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
+\pgfplotsset{compat=1.18}
 
 % Marks the beginning of the document
 \begin{document}
@@ -99,7 +100,7 @@
 
 \begin{figure}[!ht]
 	\centering
-	\resizebox{0.6\textwidth}{!}{%
+	\resizebox{0.6\textwidth}{!}{
 		\begin{circuitikz}
 			\tikzstyle{every node}=[font=\LARGE]
 			\draw [->, >=Stealth] (8,10) .. controls (8,9.5) and (8,9.25) .. (8,10) ;
@@ -140,9 +141,8 @@
 			\node [font=\LARGE] at (12.25,15.5) {$v_0$};
 			\node [font=\LARGE] at (12.5,8.75) {$v_0$};
 		\end{circuitikz}
-	}%
+	}
 	
-	\label{x}
 \end{figure}
 
 
@@ -150,7 +150,7 @@
 
 \begin{figure}[!ht]
 	\centering
-	\resizebox{0.6\textwidth}{!}{%
+	\resizebox{0.6\textwidth}{!}{
 		\begin{circuitikz}
 			\tikzstyle{every node}=[font=\LARGE]
 			\draw [ line width=0.9pt](5.75,11.25) to[short] (8.75,11.25);
@@ -168,16 +168,16 @@
 			\draw [ line width=0.9pt ] (12.5,14) circle (0.5cm);
 			\draw [ line width=0.9pt ] (12.5,11) circle (0.5cm);
 		\end{circuitikz}
-	}%
+	}
 	
-	\label{fig:my_label}
+	%\label{fig:my_label}
 \end{figure}
 
 \item A jet of diameter 20 mm and velocity 6 m/s coming out of a water-tank standing on a frictionless cart hits a vane and gets deflected at an angle of 45\degree\ as shown in the figure below. The density of water is 1000 kg/m$^3$. Neglect all minor and viscous losses. If the cart remains stationary, the magnitude of tension in the supporting string connected to the wall is \_\_\_\_ N.\\
 
 \begin{figure}[!ht]
 	\centering
-	\resizebox{0.6\textwidth}{!}{%
+	\resizebox{0.6\textwidth}{!}{
 		\begin{circuitikz}
 			\tikzstyle{every node}=[font=\normalsize]
 			\draw [line width=1pt, short] (7.25,17.25) -- (7.25,10.5);
@@ -218,9 +218,9 @@
 			\node [font=\LARGE] at (9.5,14) {$D = 3 m$};
 			\node [font=\normalsize] at (13.5,13.25) {$D_0 = 20 mm$};
 		\end{circuitikz}
-	}%
+	}
 	
-	\label{fig:my_label}
+	%\label{fig:my_label}
 \end{figure}
 
 
@@ -228,7 +228,7 @@
 
 \begin{figure}[!ht]
 	\centering
-	\resizebox{0.3\textwidth}{!}{%
+	\resizebox{0.3\textwidth}{!}{
 		\begin{circuitikz}
 			\tikzstyle{every node}=[font=\LARGE]
 			%\draw[fill={rgb,255:red,255; green,255; blue,255}] (7,16.75) rectangle (15.75,8);
@@ -242,9 +242,8 @@
 			\node [font=\LARGE] at (9.25,10) {water};
 			\node [font=\LARGE] at (11,12) {block};
 		\end{circuitikz}
-	}%
+	}
 	
-	\label{fig:my_label}
 \end{figure}
 
 \item A horizontal pipe is feeding water into a reservoir from the top with a time-dependent volumetric flow rate, $\vec{Q}\brak{m^{3}/h} = 1+0.1 \times t$, where $t$ is in hours. The area of the base of the reservoir is $0.5 m^2$. Assuming that initially the reservoir is empty, the height of the water level in the reservoir after 60 minutes is \_\_\_\_ m.\\
@@ -264,7 +263,7 @@
 
 \begin{figure}[!ht]
 	\centering
-	\resizebox{0.4\textwidth}{!}{%
+	\resizebox{0.4\textwidth}{!}{
 		\begin{circuitikz}
 			\tikzstyle{every node}=[font=\small]
 			\draw [ line width=1.1pt ] (12.25,14) circle (2cm);
@@ -276,9 +275,7 @@
 			\node [font=\LARGE] at (8.25,14.75) {U};
 			\node [font=\small] at (8.75,14.5) {$\infty$};
 		\end{circuitikz}
-	}%
-	
-	\label{fig:my_label}
+	}
 \end{figure}
 
 \begin{enumerate}
